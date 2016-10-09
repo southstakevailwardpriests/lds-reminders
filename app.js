@@ -28,4 +28,4 @@ app.get('/oathCallback',function(req,res){
 app.get("/app",function(req,res){
     res.send(req.session.code);
 });
-server.listen(3000);
+server.listen(process.env.PORT || 3000);
